@@ -1,0 +1,84 @@
+body {
+	background: #f5f5f5;
+}
+header {
+	margin-top: 200px;
+font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+
+
+.main-menu *{
+	margin: 0;
+	padding: 0;
+}
+.main-menu ul,
+.main-menu ol {
+	list-style: none;
+}
+.main-menu > ul {
+	display: flex;
+	justify-content: center;
+}
+.main-menu > ul li a {
+	display: block;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+background: #e2e2e2; /* Old browsers */
+background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+	padding: 15px 30px 15px 40px;
+	font-size: 14px;
+	color: #454547;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.main-menu > ul li{
+	position: relative;
+	border-right: 1px solid #b2b2b5;
+}
+.main-menu > ul li > a i.fa{
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	font-size: 18px;
+}
+.main-menu > ul li:first-child{
+	border-left: 1px solid #b2b2b5;
+}
+.main-menu > ul li:last-child{
+	border-right: 1px solid #b2b2b5;
+}
+.main-menu > ul a:hover{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+background: #b5bdc8; /* Old browsers */
+background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #b5bdc8 0%,#828c95 36%,#28343b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#28343b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	box-shadow: 1px 5px 10px -5px black;
+	transition: 0.3s ease;
+}
+/*SubMenu*/
+.main-menu li ul{
+	position: absolute;
+	min-width: 150px;
+	display: none;
+	}
+	.main-menu li > ul li{
+		border: 1px solid #c7c8ca;
+	}
+	.main-menu li > ul li a{
+		padding: 10px;
+		taxt-transform: none;
+		background: #e4e4e5;
+	}
+	.main-menu li > ul li ul{
+		position: absolute;
+		right: -150px;
+		top: 0px;		
+	}
+.main-menu li:hover > ul{
+	display: block;
+}
